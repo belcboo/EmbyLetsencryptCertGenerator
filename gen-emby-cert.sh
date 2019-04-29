@@ -34,7 +34,7 @@ DEFAULTLEBINARY="/usr/bin/certbot /usr/bin/letsencrypt /usr/sbin/certbot
 if [[ ! -v LEBINARY ]]; then
         for i in ${DEFAULTLEBINARY}; do
                 if [[ -x ${i} ]]; then
-                        LEBINARY=${i}ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQChzYHGPwCDbNhdVJZN48E69Fofd6IUeX2OPqCo6rpI8LMcVcR0H47AB8VDGLHT2B2vvAM2XueIpWTfV+DZ6fQP3AT5uJf2SrpA8I5mFjVCYsrRrcN0hemZgwREGeL2QBgoaXww77RjzH1ZYQlAQNHQlFGpskg8JvTSCuJV8XvNzkmoiFsp8vdCt52itQFn+3WVAFDkQHgAYzoYB6TyQH8abm7/f1LSkGdEHWcZbm9FOkIvr4WpDFi4isDB2RAC0OX/72frUg66pNJ7gxWw7iyToBRQYNt+hsY5kAj0SdlmL4gffbPogOa2JIldu49IceaXGu3kyOe4sr5KOhXxT2AvvN3/aNdMhmupB/yRUb5lklt9yQF5kge7YVhjxqJExJGEmm7Oq//w4a2oVQAvGDgG4dTRxpOrLK2v9jeu85BE7zicnPMZgOfuhuM3qPA2KUGk01wFCB1H4dXNIcrknM2Cf++4sj4uVJCbI3mb6dVV6waHjKAhBGJ5Z07Zqkqdcvv6qjIvLeBWm2CTyKPErN4Nb1kZOndCskkqyk0aIOrj52hlaQw5GAQth3mhCUZq0sRcvSDVriLj3G/fBS+TH8WFpMXEQeyOFe8GxbrlHBX8pEQFPIxcZ89HtlMpawVyXILDDT1RiSUzz7xQAkghDPd4l11yrPoF53AVdSJnuGl4Dw== belcboo@gmail.com
+                        LEBINARY=${i}
 
                         echo "Found LetsEncrypt/Certbot binary at ${LEBINARY}"
                         break
